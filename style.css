@@ -1,0 +1,148 @@
+body {
+  background-color: #3b2c2c;
+  font-family: Arial, sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0;
+  font-size: 40px;
+  animation: glow 2s infinite alternate;
+  font-family: ewert , cursive;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000;
+        color: #fff;
+    }
+    to {
+        text-shadow: 0 0 20px #ff6600, 0 0 30px #ff6600;
+        color: #ffd700;
+    }
+}
+
+.characters-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.character-card {
+  background-color: #2c1f1f;
+  border-radius: 10px;
+  width: 200px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+justify-content: flex-start;
+}
+
+.character-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.character-img:hover {
+  box-shadow: 0 0 25px 10px orange;
+  animation: flame 1s infinite alternate;
+  transform: scale(1.1);
+}
+
+@keyframes flame {
+  0% {
+    box-shadow: 0 0 15px 5px orange;
+  }
+  50% {
+    box-shadow: 0 0 30px 15px red;
+  }
+  100% {
+    box-shadow: 0 0 20px 10px yellow;
+  }
+}
+
+.character-card h2 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+}
+
+.character-card p {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 10px;
+}
+
+.join-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+  margin-top: auto;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.join-btn:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
+
+.join-btn:hover {
+  background-color: darkred;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.search-bar {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #555;
+  font-size: 15px;
+  outline: none;
+  background-color: #222;
+  color: #bbb;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #2c2c2c;
+  text-align: center;
+  border-top: 2px solid #444;
+}
+
+footer .credit {
+  color: #ccc;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+footer .credit span {
+  color: #f7c325;
+  transition: color 0.3s ease;
+}
+
+footer .credit span:hover {
+  color: #fff;
+}
