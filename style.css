@@ -146,3 +146,33 @@ footer .credit span {
 footer .credit span:hover {
   color: #fff;
 }
+
+@media (max-width: 900px) {
+  .characters-container {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .character-card {
+    width: 45%;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .character-card {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .search-bar {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+}
