@@ -11,13 +11,27 @@
 <body>
 <header class="header">
   <h1 class="logo">RED DEAD REDEMPTION 2</h1>
+<button id="authBtn">Login / Sign in</button>
+</header>
+
+<div id="loginBox" style="display: none;">
+  <form id="loginForm">
+    <input type="text" id="username" placeholder="Username" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">Sign in</button>
+  </form>
+</div>
+
+<div id="welcomeMessage" style="margin: 20px; font-size: 20px; font-weight: bold;"></div>
   <div class="search-bar">
-    <input type="text" placeholder="Search...">
+    <input type="text" id="searchInput"  placeholder="Search Characters...">
     <i class="fa-solid fa-magnifying-glass search-icon"></i>
   </div>
 </header>
 
 </body>
+<div id="welcomemessage" style="margin: 20px; font-size: 20px; font-weight: bold;"></div>
 <div class="characters-container">
 
   <div class="character-card">
@@ -143,5 +157,6 @@
     <footer>
       <p class="credit">Created by <span>Hamid Rad</span> © 2025</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

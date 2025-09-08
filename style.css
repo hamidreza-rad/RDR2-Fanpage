@@ -259,3 +259,18 @@ footer .credit span:hover {
   }
 }
 }
+
+#authBtn {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#authBtn:hover {
+  background-color: white;
+  color: black;
+}
